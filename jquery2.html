@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #box{
+            background-color:red;
+            color: white;
+            font-size: 12px;
+            padding:7px;
+        }
+        #box h1{
+            color: saddlebrown;
+            font-size: 20px;
+            padding: 12px;
+        }
+        #box1{
+            background-color:red;
+            color: white;
+            font-size: 12px;
+            padding:7px;
+        }
+        #box1 h1{
+            color: white;
+            font-size: 20px;
+            padding: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h1>jquery</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur vero, esse modi commodi maxime neque quaerat quo maiores! Dolorum, aut.</p>
+    </div>
+    <hr>
+    <div id="box1">
+        <h1>jquery</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur vero, esse modi commodi maxime neque quaerat quo maiores! Dolorum, aut.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+     $(document).ready(function(){
+         $('body').keypress(function(){
+             $(this).css("background-color","black");
+         });
+         $('body').keyup(function(){
+             $(this).css("background-color","blue");
+         });
+         $('body').keydown(function(){
+             $(this).css("background-color","green");
+         });
+
+     });
+    </script>
+</body>
+</html>
